@@ -1,0 +1,36 @@
+@import "./_mixins";
+
+.Tagline {
+  position: absolute;
+  width: 240px;
+  top: 30px;
+  right: 40px;
+  font-style: normal;
+  text-align: center;
+
+  @include lt-tablet {
+    display: none;
+  }
+}
+
+.Tagline-enter {
+  transition: transform 0.3s ease-in, opacity 0.3s;
+  transform: scale(0) rotate(-180deg);
+  opacity: 0;
+}
+
+.Tagline-enter-active {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+.Tagline-leave {
+  opacity: 1;
+  transition: transform 0.3s ease-in, opacity 0.3s;
+  transform: scale(1) rotate(0deg);
+}
+
+.Tagline-leave-active {
+  transform: scale(0) rotate(-180deg);
+  opacity: 0;
+}

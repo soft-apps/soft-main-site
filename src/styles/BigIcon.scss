@@ -1,0 +1,54 @@
+@import "./_mixins";
+
+.BigIcon {
+  display: block;
+  margin-right: 45px;
+  width: 300px;
+  margin-bottom: 60px;
+  cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include lt-mobile {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+  }
+}
+
+.BigIcon-icon {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.125);
+  border-radius: 17.3%;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  background-color: #ddd;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+  @include gt-tablet {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  @include lt-mobile {
+    height: 250px;
+  }
+}
+
+.BigIcon-info {
+  display: none;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 1.2;
+
+  @include lt-tablet {
+    display: block;
+  }
+}
+
+.BigIcon-tagline {
+  font-style: italic;
+}

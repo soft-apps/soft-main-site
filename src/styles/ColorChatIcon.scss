@@ -1,0 +1,19 @@
+.ColorChatIcon .BigIcon-icon {
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #000;
+}
+
+.ColorChatIcon-letter {
+  font-family: Work Sans;
+  width: 33.33333%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #00f;
+}

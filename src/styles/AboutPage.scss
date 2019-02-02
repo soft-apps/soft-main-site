@@ -1,0 +1,10 @@
+@import "./mixins.scss";
+
+.AboutPage-content {
+  max-width: 450px;
+}
+
+.AboutPage-content a {
+  border-bottom: 1px solid black;
+  line-height: 1;
+}
